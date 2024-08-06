@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Panel</title>
+
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="adminPanel.css">
+
+    <style>
+        body {
+            background-color: #dcdcdc;
+        }
+    </style>
+
+    <link rel="icon" type="image/x-icon" href="../Assests/logo.png">
+</head>
+
+<body>
+    <!-- admin panel menu container -->
+    <div class="admin-menu-container">
+        <div class="logo-section">
+            <p>FindMe<span id="logo-span">Home</span></p>
+        </div>
+
+        <div class="menu-section">
+            <div class="menu-section-atom">
+                <div class="menu-logo">
+                    <img src="../Assests/Dashboard.png" alt="">
+                </div>
+
+                <div class="menu-title">
+                    <p> <a href="#" id="dashboard" class="menu-option"> Dashboard </a> </p>
+                </div>
+            </div>
+
+            <div class="menu-section-atom">
+                <div class="menu-logo">
+                    <img src="../Assests/user.png" alt="">
+                </div>
+
+                <div class="menu-title">
+                    <p> <a href="#" id="users" class="menu-option"> Users </a> </p>
+                </div>
+            </div>
+
+            <div class="menu-section-atom">
+                <div class="menu-logo">
+                    <img src="../Assests/feedback.png" alt="">
+                </div>
+
+                <div class="menu-title">
+                    <p> <a href="#" id="feedbacks" class="menu-option"> Feedbacks </a> </p>
+                </div>
+            </div>
+
+            <div class="menu-section-atom">
+                <div class="menu-logo">
+                    <img src="../Assests/sign out.png" alt="">
+                </div>
+
+                <div class="menu-title">
+                    <p> <a href="#" id="signout" class="menu-option"> Sign Out </a> </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- dark background -->
+    <div class="dark-background"> </div>
+
+    <!-- content container -->
+    <div class="all-content-container">
+
+        <!-- dashboard section -->
+        <div class="admin-dashboard-container content">
+            <div class="dashboard-container">
+                <div class="dashboard-header">
+                    <h3>Dashboard</h3>
+                </div>
+
+                <div class="dashboard-data1-container">
+                    <div class="dashboard-number-container">
+                        <div class="dashboard-total-user">
+                            <div class="title-icon">
+                                <img src="../Assests/user.png" alt="">
+                            </div>
+
+                            <div class="title-data">
+                                <h4>Total User</h4>
+                                <p id="total_user">1768</p>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-total-landlord">
+                            <div class="title-icon">
+                                <img src="../Assests/landlord.png" alt="">
+                            </div>
+
+                            <div class="title-data">
+                                <h4>Landlord</h4>
+                                <p id="total_landlord">700</p>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-total-tenant">
+                            <div class="title-icon">
+                                <img src="../Assests/tenant.png" alt="">
+                            </div>
+
+                            <div class="title-data">
+                                <h4>Tenant</h4>
+                                <p id="total_tenant">1068</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-graph-container">
+                        <img src="../Assests/graph exmaple.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="room-stat-section">
+                <div class="room-stat-heading">
+                    <h3>Room Stat</h3>
+                </div>
+
+                <div class="room-stat-detail-div">
+                    <div class="room-stat-piechart">
+                        <img src="../assests/room stat.png" alt="">
+                    </div>
+
+                    <div class="room-stat-detail">
+                        <div class="room-stat-index-section">
+                            <div class="room-vacant-stat">
+                                <div class="index-color" id="index-1"> </div>
+                                <div class="index"> 
+                                    <p>Vacant</p>
+                                </div>
+                            </div>
+
+                            <div class="room-vacant-stat">
+                                <div class="index-color" id="index-2"> </div>
+                                <div class="index"> 
+                                    <p>Occupied</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="room-stat-table-section">
+                            <table id="room-stat-table">
+                                <tr>
+                                    <th>S.N.</th>
+                                    <th>Status</th>
+                                    <th>Number</th>
+                                    <th>Percentage</th>
+                                </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>Vacant</td>
+                                    <td>150</td>
+                                    <td>78%</td>
+                                </tr>
+
+                                <tr>
+                                    <td>2</td>
+                                    <td>Occupied</td>
+                                    <td>50</td>
+                                    <td>22%</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- user section -->
+        <div class="admin-user-container content">
+            <div class="user-heading">
+                <h3>User</h3>
+            </div>
+
+            <!-- user--search & filter -->
+            <div class="user-search-filter">
+                <div class="user-search">
+                    <div class="user-search-box">
+                        <input type="text" name="" id="">
+                    </div>
+
+                    <div class="user-search-icon">
+                        <img src="../Assests/search.png" alt="">
+                    </div>
+                </div>
+
+                <div class="user-filter">
+                    <div class="user-filter-left">
+                        <input type="checkbox" name="" id="">
+                    </div>
+
+                    <div class="user-filter-right">
+                        <div class="user-filter-right-landlord">
+                            <p>Landlord</p>
+                        </div>
+
+                        <div class="user-filter-right-slider">
+                            <div class="user-slider-back"></div>
+                            <div class="user-slider" onclick="changeUser()"></div>
+                        </div>
+
+                        <div class="user-filter-right-tenant">
+                            <p>Tenant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- user--table -->
+            <div class="user-container">
+                <table id="user_table">
+                    <tr id="user_heading">
+                        <th id="id_head">ID</th>
+                        <th id="username_head">Username</th>
+                        <th id="role_head">Role</th>
+                        <th id="email_head">Email Address</th>
+                        <th id="address_head">Address</th>
+                        <th id="contact_head">Contact</th>
+                        <th id="seeMore_head"></th>
+                    </tr>
+
+                    <!-- repeats -->
+                    <tr class="user_detail_head">
+                        <td class="user_id_td">1234</td>
+                        <td class="username_td">Shristi Pradhan</td>
+                        <td class="role_td">Landlord</td>
+                        <td class="email_td">shristipradhan@gmail.com</td>
+                        <td class="address_td">Kupandole-3, Ktm</td>
+                        <td class="contact_td">9876543215</td>
+                        <td class="seemore_td">
+                            <a href="#" onclick="showUserDetail()">See More</a>
+                        </td>
+                    </tr>
+
+                    <tr class="user_detail_head">
+                        <td class="user_id_td">7745</td>
+                        <td class="username_td">Samir Shrestha</td>
+                        <td class="role_td">Tenant</td>
+                        <td class="email_td">samirshrestha@gmail.com</td>
+                        <td class="address_td">Kalanki, Ktm</td>
+                        <td class="contact_td">1234789856</td>
+                        <td class="seemore_td">
+                            <a href="#" onclick="showUserDetail()">See More</a>
+                        </td>
+                    </tr>
+
+                    <tr class="user_detail_head">
+                        <td class="user_id_td">2456</td>
+                        <td class="username_td">Bishal Tamang</td>
+                        <td class="role_td">Tenant</td>
+                        <td class="email_td">bishaltamang@gmail.com</td>
+                        <td class="address_td">Bansbari, Ktm</td>
+                        <td class="contact_td">9874589654</td>
+                        <td class="seemore_td">
+                            <a href="#" onclick="showUserDetail()">See More</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="table-page-changer" id="tablePageChanger">
+                <div class="table-page-image">
+                    <img src="../Assests/previous.png" alt="">
+                </div>
+
+                <div class="table-page-number">
+                    <div class="table-page-atom active-table-page">
+                        <p>01</p>
+                    </div>
+                    <div class="table-page-atom">
+                        <p>02</p>
+                    </div>
+                    <div class="table-page-atom">
+                        <p>03</p>
+                    </div>
+                </div>
+
+                <div class="table-page-image">
+                    <img src="../Assests/next.png" alt="">
+                </div>
+            </div>
+
+            <!-- user detail - pop up -->
+            
+            <div class="user-detail-popup">
+                <div class="user-detail-popup-top">
+                    <img src="../Assests/Profile picture.png" alt="">
+                    <p><a href="#">View full profile photo</a></p>
+                    <p><a href="#">View citizenship photo</a></p>
+                </div>
+                <hr style="margin-top: 2px;">
+                <div class="user-detail-popup-bottom">
+                    <div class="user-detail-atom">
+                        <div class="user-detail-label">Username</div>
+                        <div class="user-detail-detail">user-name</div>
+                    </div>
+
+                    <div class="user-detail-atom">
+                        <div class="user-detail-label">Role</div>
+                        <div class="user-detail-detail">user-role</div>
+                    </div>
+
+                    <div class="user-detail-atom">
+                        <div class="user-detail-label">Email</div>
+                        <div class="user-detail-detail">user-email address</div>
+                    </div>
+
+                    <div class="user-detail-atom">
+                        <div class="user-detail-label">Gender</div>
+                        <div class="user-detail-detail">user-gender</div>
+                    </div>
+
+                    <div class="user-detail-atom">
+                        <div class="user-detail-label">Contact</div>
+                        <div class="user-detail-detail">user-contact</div>
+                    </div>
+
+                    <div class="user-detail-atom">
+                        <div class="user-detail-label">Date of birth</div>
+                        <div class="user-detail-detail">user-date-of-birth</div>
+                    </div>
+
+                    <div class="user-detail-atom">
+                        <div class="user-detail-label">Address</div>
+                        <div class="user-detail-detail">user-address</div>
+                    </div>
+
+                    <div class="user-detail-atom">
+                        <div class="user-detail-label">Rooms</div>
+                        <div class="user-detail-detail">user-total-rooms</div>
+                    </div>
+
+                    <div class="user-detail-atom">
+                        <div class="user-detail-label">Occupied</div>
+                        <div class="user-detail-detail">user-room-occupied</div>
+                    </div>
+
+                    <div class="user-detail-atom">
+                        <div class="user-detail-label">Unoccupied</div>
+                        <div class="user-detail-detail">user-unoccupied</div>
+                    </div>
+                </div>
+
+                <div class="user-detail-button-section">
+                    <input type="button" value="Terminate Account">
+                    <input type="button" value="Send Message">
+                </div>
+
+                <p id="close-user-detail" onclick="closeUserDetail()">&times;</p>
+            </div>
+        </div>
+
+        <!-- feedback section -->
+        <div class="admin-feedback-container content">
+            <div class="feedback-heading">
+                <h3>Feedbacks</h3>
+            </div>
+
+            <div class="feedback-container">
+                <div class="feedback-box">
+                    <div class="feedback-user-detail">
+                        <div class="user-image-div">
+                            <img src="../Assests/Profile picture.png" alt="">
+                        </div>
+
+                        <div class="user-detail-div">
+                            <p id="user_username">Username</p>
+                            <p id="user_role">Landlord</p>
+                            <p id="user_email">username@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="feedback-detail">
+                        <!-- <textarea name="" id="user_feedback" cols="" rows="" placeholder="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ad, nobis amet, repellat ducimus sequi nemo, adipisci in quia totam minima mollitia esse exercitationem. Saepe repudiandae dicta dolore, maiores numquam itaque  lorem its gyare wygauhs cupiditate."></textarea> -->
+                        <textarea name="" id="user_feedback" cols="" rows="" placeholder="User feedback appears here..."
+                            onkeypress="return false"></textarea>
+                        <input type="button" value="Reply" onclick="viewFeedbackReply()">
+                    </div>
+                </div>
+
+                <div class="feedback-box"></div>
+                <div class="feedback-box"></div>
+                <div class="feedback-box"></div>
+                <div class="feedback-box"></div>
+            </div>
+
+            <div class="feedback-reply-box">
+                <div class="reply-user-detail">
+                    <div class="reply-user-image">
+                        <img src="../Assests/Profile picture.png" alt="">
+                    </div>
+
+                    <div class="reply-user-basic-detail">
+                        <p id="user_username_2">Username</p>
+                        <p id="user_role_2">Role</p>
+                    </div>
+                </div>
+
+                <div class="reply-email-section">
+                    <p>Replying to:</p>
+                    <p id="user_email_2">username@gmail.com</p>
+                </div>
+
+                <div class="reply-section">
+                    <textarea name="" id="" placeholder="Write your feedback here..."></textarea>
+                    <input type="button" value="Send Reply">
+                </div>
+
+                <p id="close_reply" onclick="closeFeedbackReply()">&times;</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- javascript section -->
+    <script src="adminPanel.js"></script>
+</body>
+
+</html>

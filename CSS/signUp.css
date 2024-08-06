@@ -1,0 +1,306 @@
+#signUpMainContaineer {
+    display: flex;
+    position: absolute;
+    width: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-between;
+    margin-top: 25px;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* website detail containeer */
+.websiteDetail {
+    width: 400px;
+}
+
+.websiteDetail h3 {
+    margin-top: 85%;
+    font-family: 'Marck Script', cursive;
+    font-size: 38px;
+}
+
+/* sign up box containeer : right side */
+#signUpBoxId {
+    width: 400px;
+    background-color: white;
+    padding: 20px 20px 10px 20px;
+    border-radius: 12px;
+    border: none;
+    box-shadow: -2px 2px 2px 2px #c6c5c5;
+}
+
+#signUpHeadingId {
+    margin: -10px 0px 15px 0px;
+    height: 60px;
+}
+
+/* heading */
+#signUpHeadingId h3 {
+    text-align: center;
+    font-size: 17px;
+    line-height: 36px;
+}
+
+/* message area */
+#signUpMessage{
+    color: tomato;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* sign up - input boxes */
+#signUpBoxId input[type=text],
+#signUpBoxId input[type=number],
+#signUpBoxId input[type=date],
+#signUpBoxId input[type=email],
+#signUpBoxId input[type=password],
+#signUpBoxId select {
+    width: 100%;
+    padding-left: 6px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 2px solid gray;
+}
+
+#signUpBoxId input[type=checkbox] {
+    width: 15px;
+    top: -46px;
+}
+
+/* slider section */
+#userTypeContaineer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#userTypeTitle p {
+    font-size: 18px;
+    padding-top: 2px;
+    color: rgb(90, 87, 87);
+}
+
+#userTypeLabel {
+    width: 150px;
+    height: 32px;
+    display: flex;
+    padding-top: 3px;
+    justify-content: space-around;
+    border-radius: 12px;
+    border: 2px solid gray;
+}
+
+#userTypeLabel p{
+    margin-top: 2px;
+    font-size: 14px;
+}
+
+/* slider */
+#userTypeSlider {
+    position: relative;
+    top: -29.5px;
+    left: 2.5px;
+    height: 27px;
+    width: 80px;
+    border-radius: 11px;
+    margin-bottom: -15px;
+    background-color: yellowgreen;
+}
+
+#signInEmailId,
+#signInPasswordId {
+    width: 100%;
+    height: 38px;
+    font-size: 15px;
+    border-radius: 8px;
+    padding-left: 6px;
+    margin-top: 5px;
+}
+
+
+/* input boxes */
+#signUpBoxId input {
+    width: 100%;
+    height: 38px;
+    margin-top: 10px;
+}
+
+#signUpBoxId select {
+    width: 100%;
+    height: 38px;
+    margin-top: 10px;
+    font-size: 13px;
+    padding-left: 2px;
+}
+
+.firstPasswordClass {
+    height: 40px;
+}
+
+#showHidePasswordCheckbox {
+    position: relative;
+    top: -20px;
+    left: 338px;
+}
+
+
+#showHidePasswordCheckbox {
+    width: 16px;
+    height: 16px;
+    margin-top: 9px;
+}
+
+#note {
+    width: 100%;
+    height: 54px;
+    /* font-size:12px; */
+    margin: 10px 0px -10px;
+    resize: none;
+    visibility: visible;
+}
+
+#signUpPasswordConfirm {
+    margin-top: 16px;
+    margin-bottom: 5px;
+}
+
+.fileUploadClass {
+    display: flex;
+}
+
+.fileUploadLabel {
+    width: 70%;
+}
+
+.fileUploadClass p {
+    font-size: 13px;
+    line-height: 38px;
+}
+
+#signUpBoxId textarea {
+    padding-left: 6px;
+    border-radius: 6px;
+    border: 2px solid gray;
+}
+
+
+/* next step : Email Verification */
+#emailVerificationBox {
+    position: absolute;
+    width: 400px;
+    top: 22%;
+    padding: 10px;
+    border-radius: 12px;
+    box-shadow: -2px 2px 2px 1px #c5c5c6;
+    background-color: white;
+    visibility: hidden;
+}
+
+#emailVerificationBox img {
+    width: 160px;
+    margin: 20px 110px;
+}
+
+#emailVerificationBox p {
+    text-align: center;
+    line-height: 18px;
+    margin-top: -15px;
+}
+
+#emailVerificationBox h3 {
+    text-align: center;
+    line-height: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+#emailVerificationBox input[type=number] {
+    height: 38px;
+    width: 100%;
+    margin-top: 35px;
+    padding-left: 6px;
+}
+
+#signUpBoxId input[type=submit] {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: -20px;
+}
+
+#signUpBoxId a{
+    font-size: 13px;
+}
+
+#emailVerificationBox input[type=submit]{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+}
+
+/* responsive section */
+/* tablet section*/
+@media screen and (min-width:416px) and (max-width:815px) {
+    .websiteDetail {
+        display: none;
+    }
+
+    #signUpMainContaineer,
+    #emailVerificationBox {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:416px) {
+    .websiteDetail {
+        display: none;
+    }
+
+    #signUpMainContaineer,
+    #emailVerificationBox{
+        margin-top: 10px;
+        width: 300px;
+        overflow: hidden;
+    }
+
+    #signUpBoxId,
+    #emailVerificationBox{
+        border-radius: 0;
+        width: 100%;
+    }
+
+    /* sign up - input boxes */
+    #signUpBoxId input[type=text],
+    #signUpBoxId input[type=number],
+    #signUpBoxId input[type=date],
+    #signUpBoxId input[type=email],
+    #signUpBoxId input[type=password],
+    #signUpBoxId select {
+        height: 32px;
+        width: 100%;
+    }
+
+    #signUpBoxId input[type=checkbox] {
+        width: 15px;
+        top: -46px;
+    }
+
+
+    .fileUploadClass{
+        width: 100%;
+        display: block;
+    }
+
+    .fileUploadChoose{
+        width: 100%;
+    }
+
+    #showHidePasswordCheckbox{
+        left: 237px;
+    }
+}

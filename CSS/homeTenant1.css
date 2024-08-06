@@ -1,0 +1,176 @@
+.tenantHomeContaineer{
+    max-width: 1190px;
+    width: 1180px;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filterClass {
+    width: 205px;
+    height: 415px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: -2px 2px 2px 2px rgb(223, 223, 223);
+}
+
+.filterClass select {
+    width: 185px;
+    height: 28px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.filterClass input[type=text], .filterClass input[type=number]{
+    padding-left: 6px;
+}
+
+.filterTextBox{
+    width: 185px;
+    height: 28px;
+    font-size: 12px;
+    margin-top: 6px;
+    border-radius: 4px;
+}
+
+input[type=checkbox]{
+    height:12px;
+}
+
+#labelParameterId {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+#filterButton {
+    width: 185px;
+    height: 32px;
+    margin-top: -20px;
+}
+
+.filterClass a{
+    font-size: 11px;
+}
+
+
+/* room detail section */
+.articleHomeTenant{
+    width: 960px;
+}
+
+.articleHomeTenant h2{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#roomContaineer{
+    width: 805px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    column-gap: 15px;
+}
+
+
+/* see more section*/
+#seeMoreLandlordContaineerId,
+#seeMoreDarkBackground{
+    visibility: hidden;
+}
+
+
+/* page changer section */
+#pageChanger{
+    margin-left: -5px;
+}
+
+/* sign out confirmation containeer */
+.signOutConfirmationContaineer{
+    visibility: hidden;
+}
+
+.notificationContaineer{
+    visibility: hidden;
+}
+
+/* responsive section */
+@media screen and (max-width:1224px){
+    .tenantHomeContaineer{
+        width: 853px;
+        column-gap: 10px;
+    }
+
+    #roomContaineer{
+        width: 637px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:910px){
+    .tenantHomeContaineer {
+        flex-direction: column;
+        width: 640px;
+        row-gap: 10px;
+    }
+
+    .tenantHomeContaineer{
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .filterClass{
+        width: 100%;
+        height: 430px; 
+    }
+
+    #tenant1Form{
+        margin: 0 auto;
+        width: 205px;
+        padding: 10px;
+    }
+
+    .articleHomeTenant{
+        width: 100%;
+    }
+
+    .articleHomeTenant h3{
+        text-align: center;
+    }
+
+    #roomContaineer{
+        margin:  10px auto;
+    }
+
+    #pageChanger{
+        width: 170px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width:10px) and (max-width:670px){
+    .tenantHomeContaineer {
+        width: 100%;
+    }
+
+    .filterClass{
+        width: 100%;
+    }
+
+    .articleHomeTenant {
+        width: 310px;
+        margin: 0 auto;
+    }
+
+    .articleHomeTenant h3{
+        margin-bottom: 10px;
+    }
+
+    #roomContaineer {
+        width: 310px;
+        margin: 0 auto;
+        grid-template-columns: 1fr;
+    }   
+}

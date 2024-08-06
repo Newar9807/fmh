@@ -1,0 +1,67 @@
+.article{
+    width: 960px;
+    margin: 70px auto;
+}
+
+#roomContaineer{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: grid;
+    row-gap: 15px;
+    column-gap: 15px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* page changer */
+#pageChanger{
+    margin-top: 15px;
+    margin-left: -5px;
+}
+
+/* see more : containeer */
+#seeMoreLandlordContaineerId,
+#seeMoreDarkBackground{
+    visibility: hidden;
+}
+
+/* sign out confirmation containeer */
+.signOutConfirmationContaineer{
+    visibility: hidden;
+}
+
+.notificationContaineer{
+    visibility: hidden;
+}
+
+/* responsive section */
+@media screen and (max-width:985px) {
+    .article {
+        width: 640px;
+    }
+
+    #roomContaineer {
+        width: 640px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:670px) {
+    .article {
+        width: 310px;
+    }
+
+    .article h3{
+        text-align: center;
+    }
+
+    #pageChanger{
+        width: 170px;
+        margin: 20px auto 0;
+    }
+
+    #roomContaineer {
+        width: 310px;
+        grid-template-columns: 1fr;
+    }
+}

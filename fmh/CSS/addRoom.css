@@ -1,0 +1,210 @@
+/* containeer */
+#addRoomContaineer {
+    width: 80%;
+    max-width: 1360px;
+    display: flex;
+    margin: 80px auto 30px;   
+    background-color: white;   
+    box-shadow: -2px 2px 2px 2px #c6c5c5;
+}
+
+
+/* map section */
+.addRoomLeftSection{
+    width: 1000px;
+    background-color: whitesmoke;
+}
+
+.addRoomLeftSection img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* add room right section */
+.addRoomRightSection{
+    width: 360px;
+    padding: 10px;
+}
+
+#formHeadingId {
+    text-align: center;
+    margin-bottom: -4px;
+    width: 320px;
+    line-height: 36px;
+    font-size: 18px;
+}
+
+#addRoomMessage{
+    color: tomato;
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* room type selection section */
+#romTypeSection{
+    margin-top: 12px;
+    display:flex;
+    height: 32px;
+    justify-content: space-between;
+}
+
+#roomTypeOption{
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#roomTypeLabel p{
+    padding-top: 1px;
+    font-size: 13px;
+    line-height: 32px;
+}
+
+#roomTypeOption label{
+    margin-top: -4px;
+    font-size: 15px;
+}
+
+/* room picture selection section */
+#roomFile{
+    height: 32px;
+    width: 100%;
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+#roomFile label{
+    margin-top: -7px;
+    position: relative;
+    font-size: 14px;
+    left: -10px;
+}
+
+input[type=file] {
+    width:180px;
+    margin-top: 2px;
+    margin-left: 12px;
+}
+
+
+input[type=text],
+input[type=number],
+#addRoomContaineer select{
+    width: 100%;
+    height: 32px;
+    margin-top: 10px;
+}
+
+#addRoomContaineer select{
+    padding-left: 0px;
+}
+
+#addRoomContaineer textarea{
+    margin: 10px 0px;
+    height: 55px;
+    width: 100%;
+}
+
+#addRoomContaineer label{
+    padding-left: 10px;
+    font-size: 11px;
+    width: 140px;
+    line-height: 24px;
+    padding-top: 7px;
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+/* button section */
+#buttonSection{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.buttonSectionAtom{
+    width: 168px;
+}
+
+#buttonSection input[type=submit]{
+    width: 100%;
+    margin-top: 5px;
+    height: 32px;
+}
+
+/* sign out confirmation containeer */
+.signOutConfirmationContaineer{
+    visibility: hidden;
+}
+
+/* notification section */
+.notificationContaineer{
+    visibility:hidden;
+}
+
+/* responsive section */
+/* tablet */
+@media screen and (max-width:768px){
+    #addRoomContaineer {
+        width: 670px;
+    }
+
+    .addRoomRightSection{
+        width: 300px;
+    }
+}
+
+/* mobile section */
+@media screen and (min-width:358px) and (max-width:770px){
+    #addRoomContaineer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 340px;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin-top: 54px;
+        box-shadow: none;
+        background-color: whitesmoke;
+    }
+
+    #map{
+        height: 300px;
+    }
+
+    .addRoomLeftSection{
+        width: 100%;
+        height: 300px;
+        background-color: rgb(233, 185, 95);
+        overflow: hidden;
+    }
+
+    .addRoomLeftSection img{
+        width: 100%;
+        height:100%;
+    }
+
+    .addRoomRightSection{
+        width: 340px;
+        height: 565px;
+        background-color: white;
+        box-shadow: -2px 2px 2px 2px #c6c5c5;
+        margin: 10px auto;
+    }
+
+    /* service dropdown */
+    #optionDropdown{
+        margin-left: -15px;
+    }
+
+    .buttonSectionAtom{
+        width: 49%;
+    }
+}

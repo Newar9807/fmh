@@ -1,0 +1,52 @@
+.socialMainContaineer{
+    position: fixed;
+    top: 65%;
+    right: 0px;
+    width: 149px;
+    z-index: 50;
+}
+
+.socialContaineer{
+    display: block;
+}
+
+.socialContaineer div{
+    position: relative;
+}
+
+.socialMainContaineer p{
+    line-height: 32px;
+    color: white;
+    padding: 0px 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.socialClass1{
+    width: 32px;
+    background-color: #0F90F3;
+}
+
+.socialClass2{
+    background-color: #f4542c;
+}
+
+.socialClass3{
+    background-color: gray;
+}
+
+.socialClass4{
+    background-color: #B7081B;
+}
+
+/* initial case */
+.socialContaineer{
+    margin-left: 117px;
+}
+
+/* tablet */
+@media screen and (max-width:769px){
+    .socialMainContaineer{
+        display: none;
+    }
+}

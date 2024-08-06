@@ -1,0 +1,67 @@
+#extentedUserMenu{
+    width: 307px;
+    height : 100%;
+    position: fixed;
+    top:52px;
+    right: 0px;
+    background-color: whitesmoke;
+    z-index: 102;
+    box-shadow:-2px 2px 10px 1px rgb(120, 120, 120);
+    visibility: hidden;
+}
+
+#linkSection{
+    height: 400px;
+}
+
+#linkSection ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+#linkSection ul li{
+    line-height: 55px;
+}
+
+#linkSection a{
+    color: black;
+    font-size: 13px;
+}
+
+#linkSection ul li:hover{
+    background-color: yellowgreen;
+}
+
+
+/* social share - mini section */
+#socialShareMini{
+    width: 100%;
+    height: 40px;
+}
+
+
+#socialShareMiniAtom{
+    width:50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#socialShareMini img{
+    width: 25px;
+    padding: auto;
+}
+
+#socialShareMini img:hover{
+    transform: translateY(-5px);
+    transition:0.4s;
+}
+
+#socialShareMini p{
+    text-align:center;
+    opacity:0.5;
+    color:gray;
+    font-size:14px;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}

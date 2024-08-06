@@ -1,0 +1,206 @@
+#signInMainContaineer {
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%, -50%);
+}
+
+/* website details */
+.websiteDetail {
+    width: 400px;
+}
+
+.websiteDetail h3 {
+    margin-top: 54%;
+    font-family: 'Marck Script', cursive;
+    font-size: 48px;
+}
+
+/* sign in box */
+#signInBox {
+    width: 400px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: -2px 2px 2px 2px #c6c5c5;
+}
+
+#signInButtonId{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#signInBox a{
+    font-size: 13px;
+}
+
+/* heading section */
+#headingId {
+    text-align: center;
+    border-bottom: 3px solid gray;
+}
+
+#headingId h2 {
+    font-size: 21px;
+    line-height: 54px;
+}
+
+#headingId p {
+    margin-top: -10px;
+    margin-bottom: 12px;
+    color: red;
+}
+
+
+/* logo section */
+#appImageClass {
+    margin-top: 31px;
+    margin-left: 90px;
+    /* height:120px; */
+}
+
+#appImageClass img {
+    height: 120px;
+    margin-left: 40px;
+}
+
+/* role selection section */
+#userTypeContaineer {
+    margin-top: 24px;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#userTypeTitle {
+    width: 240px;
+}
+
+#userTypeTitle p {
+    line-height: 32px;
+    font-size: 16px;
+    padding-left: 4px;
+    font-weight: bold;
+    color: rgb(93, 90, 90);
+}
+
+
+/* slider section */
+#userTypeLabel {
+    width: 150px;
+    height: 32px;
+    display: flex;
+    padding-top: 3px;
+    justify-content: space-around;
+    border-radius: 12px;
+    border: 2px solid gray;
+}
+
+#userTypeLabel p{
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+/* slider */
+#userTypeSlider {
+    position: relative;
+    top: -29.5px;
+    left: 2.5px;
+    height: 27px;
+    width: 80px;
+    border-radius: 11px;
+    margin-bottom: -15px;
+    /* opacity: 0.8; */
+    background-color: black;
+    background-color: yellowgreen;
+}
+
+#signInEmailId,
+#signInPasswordId {
+    width: 100%;
+    height: 42px;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+/* checkbox */
+#passwordVisibilityToggle {
+    position: relative;
+    top: -32px;
+    left: 355px;
+    width: 18px;
+    height: 18px;
+}
+
+/* sign in button */
+#signInContaineer input[type=submit] {
+    width: 100%;
+    height: 44px;
+    margin-top: -5px;
+}
+
+
+/* forgot password - link */
+#signInContaineer a {
+    display: block;
+}
+
+#signInContaineer a:nth-child(even) {
+    padding-top: 10px;
+}
+
+/* responsive section */
+/* tablet section*/
+@media screen and (min-width:416px) and (max-width:813px){
+    #signInMainContaineer{
+        width: 400px;
+    }
+
+    .websiteDetail{
+        display: none;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:416px){
+    #signInMainContaineer{
+        width: 320px;
+        border-radius: 0px;
+    }
+
+    .websiteDetail{
+        display: none;
+        
+    }
+
+    #signInContaineer{
+        width: 320px;
+        overflow: hidden;
+        border-radius: 0px;
+    }
+
+    #signInBox{
+        border-radius: 0px;
+        width: 320px;
+    }
+
+    #headingId h2{
+        font-size: 17px;
+    }
+
+    #signInForm form input[type=email],
+    #signInForm form input[type=password]{
+        height: 32px;
+    }
+
+    #signInForm form input[type=submit],
+    #signInForm form input[type=button]{
+        height: 40px;
+    }
+
+    #passwordVisibilityToggle{
+        left: 275px;
+        top: -26px;
+    }
+}

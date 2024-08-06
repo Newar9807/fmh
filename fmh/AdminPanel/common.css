@@ -1,0 +1,184 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Segoe UI;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI';
+    background-color: #F6F5F5;
+}
+
+/* paragraph */
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* link */
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: orangered;
+}
+
+/* inputs */
+input[type=text],
+input[type=number],
+input[type=password],
+input[type=email],
+input[type=date]{
+    border-radius: 6px;
+    padding-left: 6px;
+}
+
+select{
+    font-size: 14px;
+    border-radius: 6px;
+}
+
+textarea{
+    resize:none;
+    padding-left: 6px;
+    border-radius: 6px;
+    border: 3px solid gray;
+}
+
+textarea:focus{
+    transform: scale(1.009);
+}
+
+select:focus{
+    transform: scale(1.009);
+}
+
+
+/* effect for focused input boxes */
+input[type=text]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+input[type=password]:focus{
+    border: none;
+    transform: scale(1.009);
+}
+
+
+/* button section */
+input[type=button],
+input[type=submit] {
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+/* hover on button */
+input[type=submit]:hover,
+input[type=button]:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+/* active button */
+input[type=submit]:active,
+input[type=button]:active {
+    transform: scale(0.96);
+}
+
+
+/* outline */
+
+
+/* for hiding incrementer from inputbox[type=number] */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* task status indication section */
+.success {
+    color: green;
+}
+
+.fail {
+    color: red;
+}
+
+
+/* sign out confirmation box  */
+.signOutConfirmationContaineer{
+    background-color: white;
+    width: 280px;
+    height: 80px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 150;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.signOutHeading{
+    width: 262px;
+    margin-bottom: 15px;
+}
+
+.signOutButton{
+    width: 165px;
+    float: right;
+    row-gap: 15px;
+    margin-right: 00px;
+}
+
+.signOutButton input[type=submit]{
+    width: 80px;
+    min-height: 24px;
+}
+
+/* notification section */
+.notificationContaineer{
+    width: 260px;
+    padding: 0 10px 5px;
+    padding-bottom: 15px;
+    min-height: 65px;
+    z-index: 150;
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    /* background-color: rgb(237, 80, 80); */
+    background-color: yellowgreen;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#closeNotification{
+    float: right;
+    font-size: 28px;
+    line-height: 22px;
+    cursor: pointer;
+    width: 18px;
+    font-weight: 500;
+    margin-bottom: 1px;
+    margin-right: -4px;
+}
+
+/* responsive section */
+@media screen and (max-width:520px){
+    .socialMainContaineer{
+        visibility: hidden;
+    }
+}

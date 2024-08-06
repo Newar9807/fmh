@@ -1,0 +1,76 @@
+
+#dropCheckbox{
+    width: 100%;
+    height: 40px;
+    padding-top: 0px;
+}
+
+#optionIncluder{
+    height: 32px;
+}
+
+#optionIncluder input[type=text]{
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+/* drop down arrow */
+#optionDropdown{
+    height: 16px;
+    position: relative;
+    top: -26px;
+    left: 315px;
+    width: 14px;
+    height: 14px;
+}
+
+#options{
+    position: relative;
+    
+    width: 100%;
+    margin-top: 12px;
+    background: white;
+    border-bottom-left-radius : 6px;
+    border-bottom-right-radius : 6px;
+    box-shadow: -2px 2px 20px 1px gray;
+}
+
+.optionAtom{
+    display: flex;
+    height: 32px;
+}
+
+.optionCheck{
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+}
+
+.optionCheck input[type=checkbox]{
+    height: 12px;
+    width: 12px;
+    margin-left: 3px;
+    margin-top: 5px;
+}
+
+.optionTitle{
+    width: 308px;
+    padding: 6px 6px;
+}
+
+
+/* initial case */
+#options{
+    visibility: hidden;
+}
+
+#optionIncluder input{
+    border-radius: 6px;
+}
+
+
+#optionTitle1:hover, #optionTitle2:hover, #optionTitle3:hover, #optionTitle4:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}

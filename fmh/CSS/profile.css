@@ -1,0 +1,99 @@
+body{
+    min-height: 91vh;
+}
+
+.containeer{
+    margin: 80px auto;
+    margin-bottom: 60px;
+    width:450px;
+    line-height: 28px;
+    font-size: 12px;
+}
+
+.userDetailImageClass{
+    width: 100%;
+    padding: 5px;
+}
+
+.userDetailImageClass a{
+    display: block; 
+    font-size: 11px; 
+    margin-left: 5px;
+}
+
+#userImageId{
+    border-radius: 100px;
+    width: 84px;
+    height: 84px;
+}
+
+.detailManipulationSection{
+    padding-left: 10px;
+}
+
+#editProfileBtn{
+    margin-top: 8px;
+    width: 430px;
+    height: 32px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+#accountDeletion{
+    display: block;
+}
+
+.userDetailMainClass{
+    width: 100%;
+}
+
+.userDetailClass{
+    display: flex;
+    width: 100%;
+}
+
+.userDetailTitle{
+    width: 300px;
+    font-weight: 550;
+    color: #433e3e;
+    padding-left: 10px;
+}
+
+.userDescriptionClass{
+    width:450px;
+    padding-left: 10px;
+}
+
+.notificationContaineer{
+    visibility: hidden;
+}
+
+
+/* responsive section */
+/* tablet */
+@media screen and (max-width:769px) {
+    .containeer {
+        width: 90%;
+        background-color: whitesmoke;
+        margin-left: 30px;
+    }
+
+    #editProfileBtn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width:361px) {
+    .containeer {
+        width: 100%;
+        margin-top: 60px;
+        margin-left: 0px;
+        /* margin-bottom: 30px; */
+    }
+
+    #editProfileBtn {
+        width: 97%;
+    }
+}

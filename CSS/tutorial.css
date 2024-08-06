@@ -1,0 +1,139 @@
+#tutorialMaincontaineer{
+    width: 810px;
+    margin: 60px auto;
+}
+
+#videoPlayer{
+    width: 810px;
+    margin: 60px auto;
+    margin-bottom: -60px;
+    display: none;
+}
+
+#videoHeading{
+    display: flex;
+    height: 34px;
+    width: 99%;
+    justify-content: space-between;
+}
+
+#viedoTitle, #closeVideo{
+    line-height: 30px;
+    font-size: 10px;
+}
+
+#closeVideo{
+    margin-top: -2px;
+    font-size: 29px;
+    margin-right: -3px;
+    cursor: pointer;
+}
+
+#videoPlayer video{
+    width:100%;
+    border: none;
+}
+
+
+/* containeer section */
+#tutorialContaineer{
+    display: grid;
+    row-gap: 15px;
+    column-gap: 15px;
+    margin-top: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.tutorialBox{
+    height:250px;
+    width: 190px;
+    transition: 0.3s;
+    background-color: white;
+    box-shadow: -2px 2px 2px 2px rgb(206, 202, 202);
+}
+
+.tutorialBox:hover{
+    transform: scale3d(1.05,1.05,1.05);
+    transition: 0.3s;
+}
+
+.tutorialDescription{
+    height: 100px;
+    padding: 0px 5px;
+    overflow: hidden;
+}
+
+.tutorialButton{
+    padding: 0 10px;
+}
+
+.tutorialThumbnail img{
+    width: 190px;
+    height: 101.25px;
+}
+
+
+#videoTitleId{
+    color: rgb(39, 38, 38);
+    margin-top: 5px;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#videoId{
+    background-color: black;
+    border: none;
+}
+
+#videoDescriptionId{
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+#learnMoreButton{
+    width: 175px;
+    margin-left: -5px;
+    margin-top: 5px;
+    height: 28px;
+    font-size: 12px;
+}
+
+/* sign out confirmation containeer */
+.signOutConfirmationContaineer{
+    visibility: hidden;
+}
+
+/* responsive section */
+@media screen and (max-width:840px){
+    #videoPlayer{
+        width: 100%;
+    }
+
+    #tutorialMaincontaineer{
+        width: 600px;
+    }
+
+    #tutorialContaineer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:628px){
+    #tutorialMaincontaineer{
+        width: 400px;
+    }
+
+    #tutorialContaineer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:428px){
+    #tutorialMaincontaineer{
+        width: 190px;
+    }
+
+    #tutorialContaineer{
+        grid-template-columns: 1fr;
+    }
+}
